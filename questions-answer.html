@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <i class="bi bi-record-fill text-info"></i>小懶蟲</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,19 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">首頁</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">服務介紹</a>
+                        <a class="nav-link" href="./index.html#service_range">服務介紹</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">方案費用</a>
+                        <a class="nav-link" href="./index.html#plans_price">方案費用</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link active" href="#">常見問題</a>
+                        <a class="nav-link active" href="./questions-answer.html">常見問題</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="btn btn-info" href="#">方案費用</a>
+                        <a class="btn btn-info" href="./plans.html">方案費用</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +51,61 @@
         <h1 class="fw-bold">常見問題</h1>
     </header>
 
-
+    <section class="py-5 container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="qaList">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#qaList1">
+                                方案的服務內容可以調整嗎？
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="qaList1">
+                            <div class="accordion-body">
+                                <p>以下是我們提供的幾種服務內容調整選項：</p><br>
+                                <p>1. 個別定制：我們可以根據您的特定要求和喜好，量身打造一個獨一無二的方案。無論您需要增加或減少特定功能或服務，我們都樂意根據您的需求進行調整。</p>
+                                <p>2. 套餐選擇：我們提供多種不同的套餐選擇，以滿足不同客戶的需求。您可以根據您的預算和目標選擇最適合您的套餐，或者進行套餐內容的個別調整。</p>
+                                <p>3. 增值服務：除了基本方案內容外，我們還提供各種增值服務，例如定期報告、專屬客戶經理或24/7技術支援等。您可以根據您的需求選擇添加這些服務，以滿足您的特定要求。</p>
+                                <p>4. 專案合作：如果您有一個具體的專案或任務，我們可以與您合作設計一個符合目標的專案方案。我們將根據您的要求和時間表，提供相應的服務內容和支援。</p><br>
+                                <p>無論您需要哪種調整，我們都會竭盡全力滿足您的需求。請告訴我們您具體的需求，我們將為您提供最適合的服務方案！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qaList2">
+                                一次只能購買一年嗎？
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="qaList2">
+                            <div class="accordion-body">
+                                <p>我們的購買方式非常靈活，您可以根據您的需求進行選擇。一次只能購買一年的選項是我們提供的其中一種選擇，這樣您可以一次性購買一整年的服務。</p>
+                                <p>然而，如果您有其他購買期限的需求，例如半年或三個月，我們也樂意提供相應的選項，以便更好地滿足您的需求。</p>
+                                <p>請告訴我們您的期望，我們將根據您的要求提供最合適的購買選項。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qaList3">
+                                付款方式有哪些呢？
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="qaList3">
+                            <div class="accordion-body">
+                                <p>以下是我們的付款方式選項：</p><br>
+                                <p>1. 信用卡支付：您可以使用主要的信用卡品牌（如Visa、MasterCard、American Express等）進行付款。這是一種方便且安全的支付方式，您可以在購買過程中輸入信用卡資訊完成付款。</p>
+                                <p>2. 銀行轉帳：如果您更喜歡使用銀行轉帳的方式進行付款，我們提供銀行帳戶資訊供您進行轉帳支付。您只需將款項轉至我們指定的銀行帳戶，完成付款手續。</p>
+                                <p>3. 電子支付平台：我們也接受使用流行的電子支付平台進行付款，例如PayPal、支付寶等。這些平台提供了更多的支付靈活性和安全性，讓您可以輕鬆完成交易。</p><br>
+                                <p>無論您選擇哪種付款方式，我們都將確保您的付款過程安全、便捷。請選擇最符合您需求的付款方式，完成訂單的支付。如果您有任何其他問題，請隨時與我們聯繫。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -92,7 +149,7 @@
 
     <footer class="bg-secondary text-white p-4">
         <p class="text-center mb-0">
-            <small>Copyright © 2021 Sanazawa Remake.All rights reserved.</small>
+            <small>Copyright © 2023 Sanazawa Remake.All rights reserved.</small>
         </p>
     </footer>
 
